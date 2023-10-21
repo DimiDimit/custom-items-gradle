@@ -20,7 +20,7 @@ class KciNmsEntities20 extends KciNmsEntities16Plus {
                 projectilePositionX, projectileMotionY, projectileMotionZ);
 
         net.minecraft.world.entity.Entity nmsEntity = ((CraftEntity) toDamage).getHandle();
-        DamageSource indirectDamageSource = nmsEntity.dJ().a(fakeArrow, ((CraftEntity) responsibleShooter).getHandle());
+        DamageSource indirectDamageSource = nmsEntity.dM().a(fakeArrow, ((CraftEntity) responsibleShooter).getHandle());
 
         nmsEntity.a(indirectDamageSource, damage);
     }
@@ -44,7 +44,7 @@ class KciNmsEntities20 extends KciNmsEntities16Plus {
                 lineStartLocation.getZ() + safeUpperBound * direction.getZ()
         );
 
-        Optional<Vec3D> intersection = nmsEntity.cE().b(lineStart, lineEnd);
+        Optional<Vec3D> intersection = nmsEntity.cG().b(lineStart, lineEnd);
         return intersection.map(vec3D -> Math.sqrt(vec3D.g(lineStart))).orElse(Double.POSITIVE_INFINITY);
     }
 }
