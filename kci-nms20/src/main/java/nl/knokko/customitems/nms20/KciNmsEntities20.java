@@ -5,8 +5,8 @@ import net.minecraft.world.entity.projectile.EntityTippedArrow;
 import net.minecraft.world.phys.Vec3D;
 import nl.knokko.customitems.nms16plus.KciNmsEntities16Plus;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_20_R1.CraftWorld;
-import org.bukkit.craftbukkit.v1_20_R1.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_20_R2.CraftWorld;
+import org.bukkit.craftbukkit.v1_20_R2.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 import org.bukkit.util.Vector;
 
